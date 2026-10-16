@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salvia — Coming Soon</title>
     <style>
+        /* Setup elegant, minimalist layout bounds */
         body, html {
             margin: 0;
             padding: 0;
@@ -13,32 +14,71 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #fbf8f3;
+            background-color: #fbf8f3; /* Your brand cream color */
+            font-family: 'Playfair Display', 'Georgia', serif;
+            color: #3b4d40; /* Refined dark sage green font color */
+            -webkit-font-smoothing: antialiased;
             overflow: hidden;
         }
 
+        /* Dead-centering container */
         .container {
-            width: 100%;
-            height: 100%;
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 450px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            padding: 10px;
             box-sizing: border-box;
         }
 
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
+        /* Highly polished branding graphic configuration */
+        .brand-logo {
+            width: 130px;
+            height: auto;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        /* High-end editorial typography */
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 400;
+            margin: 0 0 12px 0;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .status {
+            font-size: 1.1rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            letter-spacing: 3px;
+            color: #6b7c70;
+        }
+
+        .tagline {
+            font-style: italic;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            opacity: 0.8;
+            border-top: 1px solid rgba(59, 77, 64, 0.15);
+            padding-top: 20px;
+            width: 140px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Capital U fixed here -->
-        <img src="Untitled design (1).png" alt="Salvia Coming Soon">
+        <!-- Using just your clean Eye of Horus logo image piece -->
+        <img src="Untitled design (1).png" alt="Salvia Logo" class="brand-logo">
+        
+        <!-- Premium Live Website Typography -->
+        <h1>Salvia</h1>
+        <div class="status">Coming Soon</div>
+        <div class="tagline">To be well.</div>
     </div>
 
 </body>
