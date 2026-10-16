@@ -11,37 +11,35 @@
             width: 100%; 
             height: 100%; 
             background-color: #fbf8f3; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
             overflow: hidden;
         }
-        .container {
+        .wrapper {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            box-sizing: border-box;
-            padding: 20px;
         }
-        .coming-soon-img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            max-width: 450px; /* Limits size so it never looks too big on desktop */
-            max-height: 85vh;
-            object-fit: contain;
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            transform: scale(1.6); /* This zooms in on the PDF to make it bigger */
+            transform-origin: center center;
         }
-        /* Mobile adjustment to ensure perfect scaling on phone screens */
-        @media (max-width: 768px) {
-            .coming-soon-img {
-                max-width: 85%;
-                max-height: 75vh;
+        @media (max-width: 480px) {
+            iframe {
+                transform: scale(2.2); /* Extra zoom specifically for small phone screens */
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img class="coming-soon-img" src="Untitled design (1).png" alt="Salvia Coming Soon">
+    <div class="wrapper">
+        <iframe src="Untitled design (1).png"></iframe>
     </div>
 </body>
 </html>
